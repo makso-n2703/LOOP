@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOP — GIF & Meme Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            LOOP<span>.</span>
+        </a>
+
+        <div class="nav-label">
+            INTERNET CULTURE, IN MOTION
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            GIF DISCOVERY
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Главный экран -->
+        <section class="hero">
+
+            <div class="hero-tag">
+                <span>✳</span> YOUR DAILY DOSE OF INTERNET
+            </div>
+
+            <h1>
+                Find your<br>
+                <span>reaction.</span>
+            </h1>
+
+            <p class="hero-description">
+                GIFs, memes and moments worth sharing.
+                Everything you need to express yourself.
+            </p>
+
+            <!-- Поиск -->
+            <section class="search-section">
+
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search GIFs, memes, reactions..."
+                >
+
+                <button id="searchButton">
+                    Explore <span>↗</span>
+                </button>
+
+            </section>
+
+            <p id="status"></p>
+            <div id="loader" class="loader" style="display: none;"></div>
+
+            <!-- Категории -->
+            <div class="categories">
+
+                <span class="category-label">EXPLORE:</span>
+
+                <button class="category" data-query="memes">😂 Memes</button>
+                <button class="category" data-query="reactions">👀 Reactions</button>
+                <button class="category" data-query="animals">🐈 Animals</button>
+                <button class="category" data-query="gaming">🎮 Gaming</button>
+                <button class="category" data-query="anime">✨ Anime</button>
+                <button class="category" data-query="trending">🔥 Trending</button>
+
+            </div>
+
+        </section>
+
+        <!-- Галерея -->
+        <section class="gallery-section">
+
+            <div class="gallery-heading">
+                <div>
+                    <span class="section-label">THE COLLECTION</span>
+                    <h2>Explore the chaos<span>.</span></h2>
+                </div>
+
+                <span class="gallery-caption">
+                    GIFs & MEMES / DISCOVER
+                </span>
+            </div>
+
+            <div id="gifContainer" class="gif-container"></div>
+
+            <!-- Атрибуция GIPHY -->
+            <div class="giphy-credit">
+                <a href="https://giphy.com/" target="_blank" rel="noopener noreferrer">
+                    Powered by GIPHY
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RxJS -->
+    <script src="https://unpkg.com/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
